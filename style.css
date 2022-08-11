@@ -11,7 +11,8 @@ body {
   display: grid;
   grid-template-columns: 1fr 5fr;
   grid-template-rows: 1fr 5fr;
-  height: 100vh;
+  max-height: 100vh;
+  background-color: #f1f5f9;
 }
 
 .header {
@@ -19,12 +20,11 @@ body {
   grid-column: 2 / 3;
   display: grid;
   grid-template-columns: repeat(9, 1fr);
-  grid-template-rows: 1fr 1fr;
   align-items: center;
   grid-template-areas:
     "topleft topleft topleft topleft topleft . topright topright topright"
     "bottomleft bottomleft bottomleft . . . bottomright bottomright bottomright";
-  padding: 0rem 3rem;
+  padding: 0.8rem 3rem;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 5px 5px;
 }
 
@@ -127,11 +127,11 @@ img {
 
 .main-content {
   display: grid;
-  grid-template-columns: 4fr 1fr;
-  grid-template-rows: 1fr 1.1fr;
+  grid-template-columns: 5fr 1fr;
   padding: 2rem;
   background-color: #f1f5f9;
   gap: 2rem;
+  height: 75vh;
 }
 
 .your-projects {
@@ -147,7 +147,7 @@ img {
   grid-template-columns: 1fr 1fr;
   gap: 2rem;
   padding: 1rem;
-  height: 45rem;
+  height: 47rem;
   background-color: #f1f5f9;
 }
 
@@ -199,8 +199,9 @@ img {
 
 .trending .cards {
   grid-column: 2;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  padding: 2rem 1.5rem;
+  box-shadow: #63636333 0px 2px 8px 0px;
+  padding: 2rem 2rem;
+  padding-bottom: 0;
   border-radius: 1rem;
   background-color: rgb(255, 255, 255);
   display: grid;
