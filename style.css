@@ -129,7 +129,7 @@ img {
   display: grid;
   grid-template-columns: 5fr 1fr;
   padding: 2rem;
-  background-color: #f1f5f9;
+  background-color: #eff5fa;
   gap: 2rem;
   height: 75vh;
 }
